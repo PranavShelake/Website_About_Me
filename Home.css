@@ -1,0 +1,83 @@
+.navbar{
+    background-color: black;
+    border-radius: 30px;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+.navbar li a:hover{
+    color: skyblue;
+}
+
+.biography {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.biography h1 {
+    color: #333;
+}
+
+.biography h2 {
+    color: #555;
+}
+
+.biography p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.skills {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    color: #333;
+}
+
+.skills ul {
+    color: #777;
+    list-style-type: none;
+}
+
+.contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    color: #333;
+}
+
+.contact p {
+    color: #777;
+    line-height: 1.6;
+}

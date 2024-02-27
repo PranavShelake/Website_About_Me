@@ -1,83 +1,109 @@
-.navbar{
-    background-color: black;
-    border-radius: 30px;
-}
-.navbar li{
-    float:left;
-    list-style: none; 
-    margin: 13px 20px;
-}
-.navbar ul{
-    overflow: auto;
-}
-.navbar li a{
-    padding: 3px 3px;
-    text-decoration: none;
-    color: white;
-}
-.search{
-    float: right;
-    color: white;
-    padding: 12px 75px;
-}
-.navbar input{
-    border: 2px solid black;
-    border-radius: 14px;
-    padding: 3px 17px;
-    width: 129px;
-}
-.navbar li a:hover{
-    color: skyblue;
+/* Adjustments to body */
+body {
+    margin: 20px 50px; /* Add space to the top and bottom */
+    padding: 0;
+    min-height: 100vh; /* Ensures that the body takes up at least the full viewport height */
+    position: relative;
 }
 
+/* Adjustments to navbar */
+.navbar {
+    background-color: black; /* Set background color */
+    border-radius: 30px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px 40px; /* Add padding to the navbar */
+    height: 30px; /* Set height of the navbar */
+}
+
+.navbar .brand {
+    color: white; /* Set text color */
+    font-weight: bold; /* Set font weight */
+}
+
+.navbar ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Use flexbox for layout */
+}
+
+.navbar li {
+    margin-left: 10px; /* Add left margin between navbar items */
+}
+
+.navbar li:first-child {
+    margin-left: 0; /* Remove left margin from the first child */
+}
+
+.navbar li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */
+    padding: 3px 10px; /* Add padding to links */
+}
+
+.navbar li a:hover {
+    color: skyblue; /* Change text color on hover */
+}
+
+/* Adjustments to biography section */
 .biography {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    margin: 20px; /* Add margin around the section */
+    padding: 20px; /* Add padding inside the section */
+    background-color: #f9f9f9; /* Set background color */
+    border-radius: 10px; /* Add border radius for rounded corners */
 }
 
-.biography h1 {
-    color: #333;
+.biography h1, .biography h2, .biography p {
+    color: black; /* Set text color */
+    line-height: 1.6; /* Set line height for paragraphs */
 }
 
-.biography h2 {
-    color: #555;
+/* Adjustments to footer */
+.footer {
+    position: absolute; /* Position the footer at the bottom of the page */
+    bottom: 0; /* Align footer to the bottom */
+    width: 100%; /* Set width to full width of the viewport */
+    background-color: #007bff; /* Set background color */
+    color: white; /* Set text color */
+    padding: 20px 0; /* Add padding */
+    text-align: center; /* Align text to the center */
 }
 
-.biography p {
-    color: #777;
-    line-height: 1.6;
+.contact-info {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow items to wrap if they exceed the width */
 }
 
-.skills {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+.contact-info div {
+    margin: 10px; /* Add margin around contact info */
 }
 
-.skills h2 {
-    color: #333;
+.contact-info a {
+    color: white; /* Set link color */
 }
 
-.skills ul {
-    color: #777;
-    list-style-type: none;
+/* Adjustments to ball */
+.ball {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    background-color: green; /* Set background color */
+    border-radius: 50%; /* Make the ball circular */
+    position: absolute; /* Position the ball */
+    top: 65%; /* Align the ball vertically */
+    right: -20px; /* Position the ball outside the navbar */
+    animation: moveBall 5s linear forwards; /* Add animation */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    color: white; /* Set text color */
+    z-index: 1; /* Ensure the ball is above the navbar */
 }
 
-.contact {
-    margin: 20px;
-    padding: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-}
-
-.contact h2 {
-    color: #333;
-}
-
-.contact p {
-    color: #777;
-    line-height: 1.6;
+@keyframes moveBall {
+    0% { right: -20px; } /* Start position */
+    50% { right: calc(50% - 10px); } /* Halfway point */
+    100% { right: calc(100% - 150px); } /* End position */
 }

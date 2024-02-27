@@ -9,44 +9,48 @@
 <body>
     <header>
         <nav class="navbar">
+            <div class="brand">Pranav Shelake</div>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">PROJECT</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                 <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search this website">
-                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-
+    <section class="biography">
+        <div class="welcome-content">
+            <div class="text">
+                <h1>Welcome to my site :)</h1>
+                <h2>Here you will find information about my projects!</h2>
+            </div>
+            <div class="image-container">
+                <img src="welcome_image.jpg" alt="Welcome Image"> <!-- Add your image here -->
+            </div>
+        </div>
+    </section>
     <section id="about" class="biography">
-        <h1>Pranav Shivaji Shelake</h1>
-        <h2>Student at Kolhapur Institute of Technology's College of Engg.- Autonomous, Kolhapur</h2>
         <p>
-            Hi! I'm Pranav Shivaji Shelake, a student at Kolhapur Institute of Technology's College of Engg.- Autonomous, Kolhapur. I am passionate about competitive programming and continuously strive to enhance my skills in this field.
+            I am Pranav Shelake, a third-year student at Kolhapur Institute of Technology's College of Engineering, Kolhapur, pursuing Computer Science & Engineering (CSE). I enjoy working on a variety of projects. Adaptable and able to work well under pressure. Personality with strong interpersonal skills.
         </p>
-        <!-- Optional: Add more details about your interests or aspirations -->
     </section>
+    
+    <!-- Ball for animation -->
+    <div class="ball" onclick="openProjectPage()">Project</div>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Competitive Programming</li>
-            <!-- Add more skills as needed -->
-        </ul>
-    </section>
+    <footer class="footer">
+        <p style="font-size: 20px;">You can reach out to me at:</p>
+        <div class="contact-info">
+            <div class="phone">📱 Mobile No: +91-8249816651</div>
+            <div class="email">✉️ Email: pranavshelake99@gmail.com</div>
+            <div class="linkedin">🔗 Linkedin: <a href="https://www.linkedin.com/in/pranav-shelake-bb84412ab/" target="_blank">LinkedIn</a></div>
+        </div>
+    </footer>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach out to me at:</p>
-        <p>Email: xyz@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
-        <!-- Optional: Add more contact information or professional profiles -->
-        <!-- Optional: Add links to GitHub and webpage -->
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></p>
-        <p>Webpage: <a href="https://yourwebsite.com" target="_blank">Your Website</a></p>
-    </section>
+    <script>
+        function openProjectPage() {
+            window.location.href = 'project_page.html'; // Link to the project page
+        }
+    </script>
 </body>
 </html>

@@ -107,3 +107,20 @@ body {
     50% { right: calc(50% - 10px); } /* Halfway point */
     100% { right: calc(100% - 150px); } /* End position */
 }
+
+.welcome-content {
+    display: flex;
+}
+
+.image-container{
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+    border-radius: 100px;
+    background-color: #ccc;
+}
+
+.image-container{
+    overflow: hidden;
+}
+

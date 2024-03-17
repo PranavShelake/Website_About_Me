@@ -1,0 +1,45 @@
+/* Set font family to Arial for the entire document */
+body {
+  font-family: Arial;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Create a flex container to center its children */
+.container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style the contact box */
+.contact-box {
+  background-color: lightsalmon; /* Set background color */
+  padding: 30px; /* Add padding inside the box */
+  border-radius: 25px; /* Add rounded corners */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Add shadow effect */
+  margin-top: 80px; /* Add margin at the top */
+}
+
+/* Style the heading inside the contact box */
+.contact-box h2 {
+  margin-top: 0; /* Remove top margin for the heading */
+  color: white; /* Set text color */
+  text-align: center; /* Center-align text */
+}
+
+/* Style paragraphs inside the contact box */
+.contact-box p {
+  margin: 15px 0; /* Add margin for top and bottom */
+}
+
+/* Style links inside paragraphs */
+.contact-box p a {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set text color */
+}
+
+/* Style links on hover */
+.contact-box p a:hover {
+  color: darkmagenta; /* Change text color on hover */
+}

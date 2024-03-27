@@ -1,8 +1,9 @@
 /* Set font family to Arial for the entire document */
 body {
   font-family: Arial;
-  margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+  margin: 20px 50px; /* Add space to the top and bottom */
+  min-height: 100vh; /* Ensures that the body takes up at least the full viewport height */
 }
 
 /* Create a flex container to center its children */

@@ -52,12 +52,15 @@ body {
 }
 
 .image-container{
-    width: 265px;
-    height: 185px;
-    margin-left: 150px;
-    overflow: hidden;
-    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    margin-left: 200px;
+    border-radius: 100px;
     background-color: #ccc;
+}
+
+.image-container{
+    overflow: hidden;
 }
 
 /* Adjustments to biography section */
@@ -65,7 +68,7 @@ body {
     margin: 20px; /* Add margin around the section */
     padding: 20px; /* Add padding inside the section */
     background-color: #f9f9f9; /* Set background color */
-    border-radius: 30px; /* Add border radius for rounded corners */
+    border-radius: 10px; /* Add border radius for rounded corners */
 }
 
 .biography h1, .biography h2, .biography p {
@@ -105,48 +108,44 @@ body {
 }
 
 /* Adjustments to ball */
-.first-ball, .second-ball, .third-ball {
-    width: 15%; /* Set width as 10% of the viewport width */
-    height: 25%; /* Set height as 10% of the viewport height */
+.first-ball {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    background-color: green; /* Set background color */
     border-radius: 50%; /* Make the ball circular */
     position: absolute; /* Position the ball */
-    top: 57%; /* Align the ball vertically */
+    top: 65%; /* Align the ball vertically */
+    right: -120px; /* Adjust the horizontal position to place it to the right of the viewport */
+    animation: moveBall 5s linear forwards; /* Add animation */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align content vertically */
     justify-content: center; /* Align content horizontally */
     color: white; /* Set text color */
     z-index: 1; /* Ensure the ball is above the navbar */
-    font-size: 160%;
 }
 
-/* Adjustments to ball colors and animations */
-.first-ball{
-    background-color: green; /* Set background color */
-    animation: moveBall 2 linear forwards; /* Add animation */
-}
-
+/* New Ball */
 .second-ball {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
     background-color: red; /* Set background color */
-    animation: moveBall2 2s linear forwards; /* Add animation */
-}
-
-.third-ball {
-    background-color: brown; /* Set background color */
-    animation: moveBall3 2s linear forwards; /* Add animation */
+    border-radius: 50%; /* Make the ball circular */
+    position: absolute; /* Position the ball */
+    top: 65%; /* Align the ball vertically */
+    right: -40px; /* Adjust the horizontal position to place it to the left of the existing ball */
+    animation: moveBall 5s linear forwards; /* Add animation */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Align content horizontally */
+    color: white; /* Set text color */
+    z-index: 1; /* Ensure the ball is above the navbar */
 }
 
 @keyframes moveBall {
-    0% { left: 22%; } /* Start position */
-    100% { left: 22%; } /* End position */
-}
+    0% { right: -20px; } /* Start position */
+    50% { right: calc(50% - 10px); } /* Halfway point */
+    100% { right: calc(100% - 150px); } /* End position */
+} 
 
-@keyframes moveBall2 {
-    0% { left: 22%; } /* Start position */
-    100% { left: 39%; } /* Adjusted stopping position */
-}
 
-@keyframes moveBall3 {
-    0% { left: 22%; } /* Start position */
-    100% { left: 56%; } /* Adjusted stopping position */
-}
 

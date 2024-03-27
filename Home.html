@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Projects</title>
+    <title>Pranav Shelake</title>
     <link rel="stylesheet" href="Home.css"> <!-- Link to your CSS file for styling -->
 </head>
 <body>
@@ -11,9 +11,9 @@
         <nav class="navbar">
             <div class="brand">Pranav Shelake</div>
             <ul>
-                <li><a href="Home.css">Home</a></li>
+                <li><a href="Home.html">Home</a></li>
                 <li><a href="https://drive.google.com/file/d/1N9YELfTr1W685TrDF40smUd3cefMtQFR/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="project.html">Projects</a></li>
                 <li><a href="contactme.html">Contact</a></li>
             </ul>
         </nav>
@@ -25,7 +25,7 @@
                 <h2>Here you will find information about my projects!</h2>
             </div>
             <div class="image-container">
-                <img src="welcome_image.jpg" alt="Welcome Image"> <!-- Add your image here -->
+                <img src="profile.WEBP" alt="Welcome Image"> <!-- Add your image here -->
             </div>
         </div>
     </section>
@@ -36,20 +36,47 @@
     </section>
     
     <!-- Ball for animation -->
-    <div class="ball" onclick="openProjectPage()">Project</div>
+    <div class="third-ball" onclick="Contact()">Contact</div>
+    <div class="second-ball" onclick="Resume()">Resume</div>
+    <div class="first-ball" onclick="Project()">Project</div>
+
 
     <footer class="footer">
-        <p style="font-size: 20px;">You can reach out to me at:</p>
+        <p style="font-size: 20px;">You can reach out to me at :</p>
         <div class="contact-info">
-            <div class="phone">📱 Mobile No: +91-8249816651</div>
-            <div class="email">✉️ Email: pranavshelake99@gmail.com</div>
-            <div class="linkedin">🔗 Linkedin: <a href="https://www.linkedin.com/in/pranav-shelake-bb84412ab/" target="_blank">LinkedIn</a></div>
+            <div class="phone">📱 Mobile No : +91-8249816651</div>
+            <div class="email">✉️ Email : pranavshelake99@gmail.com</div>
+            <div class="linkedin"> <a href="https://www.linkedin.com/in/pranav-shelake-bb84412ab/" target="_blank">🔗 Linkedin</a></div>
         </div>
     </footer>
 
+    <section class="biography">
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </p>
+    </section>
+
     <script>
-        function openProjectPage() {
-            window.location.href = 'project_page.html'; // Link to the project page
+        function Project() {
+            window.location.href = 'project.html'; // Link to the project page
+        }
+        function Resume() {
+        window.open("https://drive.google.com/file/d/1N9YELfTr1W685TrDF40smUd3cefMtQFR/view?usp=sharing", "_blank"); // Open link in new tab
+        }
+        function Contact() {
+            window.location.href = 'contactme.html'; // Link to the project page
         }
     </script>
 </body>

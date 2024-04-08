@@ -105,6 +105,13 @@ body {
 }
 
 /* Adjustments to ball */
+
+:root {
+  --violet: #8A2BE2; /* Define positional color for violet */
+  --turquoise: #40E0D0; /* Define positional color for turquoise */
+  --coral: #FF7F50; /* Define positional color for coral */
+}
+
 .first-ball, .second-ball, .third-ball {
     width: 15%; /* Set width as 10% of the viewport width */
     height: 25%; /* Set height as 10% of the viewport height */
@@ -121,22 +128,22 @@ body {
 
 /* Adjustments to ball colors and animations */
 .first-ball{
-    background-color: green; /* Set background color */
+    background-color: var(--violet); /* Set background color using variable */
     animation: moveBall 2 linear forwards; /* Add animation */
 }
 
 .second-ball {
-    background-color: red; /* Set background color */
+    background-color: var(--turquoise); /* Set background color using variable */
     animation: moveBall2 2s linear forwards; /* Add animation */
 }
 
 .third-ball {
-    background-color: brown; /* Set background color */
+    background-color: var(--coral); /* Set background color using variable */
     animation: moveBall3 2s linear forwards; /* Add animation */
 }
 
 @keyframes moveBall {
-    0% { left: 22%; } /* Start position */
+    0% { left: 22%;  } /* Start position */
     100% { left: 22%; } /* End position */
 }
 
